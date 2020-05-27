@@ -17,7 +17,7 @@
                 android:id="@+id/logoImg"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/pizzahut"
+                android:src="@drawable/domino"
                 app:civ_border_color="#000000"
                 app:civ_border_width="2dp"/>
                 />
