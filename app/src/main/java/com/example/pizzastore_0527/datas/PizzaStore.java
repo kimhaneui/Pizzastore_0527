@@ -1,6 +1,8 @@
 package com.example.pizzastore_0527.datas;
 
-public class PizzaStore {
+import java.io.Serializable;
+
+public class PizzaStore implements Serializable {
 
     private String name;
     private String phoneNum;
