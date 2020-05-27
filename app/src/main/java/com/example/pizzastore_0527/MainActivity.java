@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
+import com.example.pizzastore_0527.adapter.PizzaStoreAdapter;
 import com.example.pizzastore_0527.databinding.ActivityMainBinding;
 import com.example.pizzastore_0527.datas.PizzaStore;
 
@@ -15,6 +16,7 @@ public class MainActivity extends BaseActivity {
 
     ActivityMainBinding binding;
     List<PizzaStore> pizzaStoreList = new ArrayList<>();
+    PizzaStoreAdapter psa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class MainActivity extends BaseActivity {
     public void setValues() {
         addPizzaStores();
 
+        psa = new PizzaStoreAdapter(mContext,R.layout.pizza_list_item,pizzaStoreList);
+        binding.pizzaListView.setAdapter(psa);
     }
     void addPizzaStores(){
         pizzaStoreList.add(new PizzaStore("피자헛","1588-0088","https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnkQca%2FbtqwVT4rrZo%2FymhFqW9uRbzrmZTxUU1QC1%2Fimg.jpg"));

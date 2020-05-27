@@ -12,8 +12,9 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:gravity="center_vertical">
+
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imageBtn"
+                android:id="@+id/logoImg"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/pizzahut"
